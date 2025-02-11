@@ -1,0 +1,22 @@
+<template id="verityDemoTemplate">
+  <div class="verityDemo mt-3 mt-sm-5 mb-3">
+    <h2>Notes</h2>
+    <form class="verityNewNote input-group"
+          action="javascript:void(0)"
+          onsubmit="verity.currentController.postNote(this)">
+      <textarea class="verityNoteInput form-control" rows="3" type="text"
+                required placeholder="Write new note"></textarea>
+      <button type="submit" class="veritySaveButton btn btn-primary">
+        Save
+      </button>
+    </form>
+
+    <ul class="verityNoteList veritySemanticList mt-5">
+      <li class="verityNote card" style="margin: 0.5rem; width: 20rem; float: left">
+        <div class="verityNoteText card-body">
+          This is an example note, it will be removed by the View
+        </div>
+      </li>
+    </ul>
+  </div>
+</template>
