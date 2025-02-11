@@ -1,0 +1,36 @@
+{
+  "name": "veritydemo",
+  "version": "0.0.1",
+  "description": "A Verity demo application",
+  "type": "module",
+  "exports": [
+    "./dist"
+  ],
+  "scripts": {
+    "start": "echo 'This is a web only Verity application. Please \"npm run webpack\" and then open distweb/index.html in your favourite browser.'",
+    "build": "webpack",
+    "webpack": "webpack",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "raw-loader": "^4.0.2",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "verity": "file:../verity"
+  },
+  "browser": {
+    "fs": false,
+    "pino": false,
+    "pino-pretty": false,
+    "readline": false,
+    "crypto": false,
+    "cmd-ts": false,
+    "https": false
+  }
+}
